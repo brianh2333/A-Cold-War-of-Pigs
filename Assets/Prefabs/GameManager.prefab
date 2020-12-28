@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5849517148467924942}
   - component: {fileID: 263834174}
+  - component: {fileID: 3692619330900298044}
+  - component: {fileID: 9039304909267158709}
+  - component: {fileID: 7351885302138191666}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,3 +47,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopsUIAnimator: {fileID: 0}
+--- !u!114 &3692619330900298044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2707815372073908486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967990476dc34d840be012663cefed29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnpoints: []
+--- !u!114 &9039304909267158709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2707815372073908486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e4a3192fa823841a54e83049e48265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - name: Troop1
+    prefab: {fileID: 635939746570436806, guid: aa847a801460bf34cbfc7169de15cf91, type: 3}
+    size: 25
+--- !u!114 &7351885302138191666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2707815372073908486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5d5c39272c7594c9096cc6d8ea5b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools: []

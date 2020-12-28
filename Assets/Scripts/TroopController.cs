@@ -53,7 +53,7 @@ public class TroopController : MonoBehaviour {
     }
 
     void MoveUpdate() {
-        Debug.Log("Move update");
+        //Debug.Log("Move update");
         Vector3 dir  = (target.position - transform.position).normalized;
 		Vector3 cross = Vector3.Cross(transform.forward, dir);
         transform.Rotate(Vector3.up * cross.y * turnSpeed * Time.deltaTime);
@@ -67,13 +67,13 @@ public class TroopController : MonoBehaviour {
 			body.velocity = Vector3.zero;
             anim.SetBool("isWalking", false); //temp until attack anim
             StartCoroutine(Attack());
-            Debug.Log("Called attack coroutine");
+            //Debug.Log("Called attack coroutine");
 		}
         else if (dist > attackDist && dist < chaseDist) {
             Vector3 newPos = new Vector3(dir.x * speed * Time.fixedDeltaTime, 0, dir.z * speed * Time.fixedDeltaTime);
             body.MovePosition(body.position + newPos * Time.fixedDeltaTime);
 			anim.SetBool("isWalking", true);
-            Debug.Log("is walking");
+            //Debug.Log("is walking");
 		}
     }
 
