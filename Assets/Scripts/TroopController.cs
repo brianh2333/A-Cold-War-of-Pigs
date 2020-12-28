@@ -7,6 +7,7 @@ public class TroopController : MonoBehaviour {
     public float speed = 2;
     public float chaseDist = 5;
     public float attackDist = 5;
+    public float turnSpeed = 100;
     bool isDead = false;
 
     Animator anim;
@@ -55,6 +56,7 @@ public class TroopController : MonoBehaviour {
         Debug.Log("Move update");
         Vector3 dir  = (target.position - transform.position).normalized;
 		Vector3 cross = Vector3.Cross(transform.forward, dir);
+        transform.Rotate(Vector3.up * cross.y * turnSpeed * Time.deltaTime);
 
         float dist = Vector3.Distance(transform.position, transform.position);
 		if (dist > chaseDist) {

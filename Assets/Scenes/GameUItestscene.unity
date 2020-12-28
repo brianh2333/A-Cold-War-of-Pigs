@@ -418,7 +418,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b7135e0f76bf56740b8de036b257f15f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.74
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b7135e0f76bf56740b8de036b257f15f,
         type: 3}
@@ -478,13 +478,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: b7135e0f76bf56740b8de036b257f15f,
         type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:RightArm'\n\tTransform
-        'mixamorig:LeftLeg'\n\tTransform 'mixamorig:Head'\n\tTransform 'mixamorig:LeftUpLeg'\n\tTransform
-        'mixamorig:LeftArm'\n\tTransform 'mixamorig:RightLeg'\n\tTransform 'mixamorig:RightUpLeg'\n\tTransform
-        'mixamorig:Spine'\n\tTransform 'mixamorig:LeftFoot'\n\tand more ...\n\tFrom
-        animation clip 'Take 001'"
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7135e0f76bf56740b8de036b257f15f, type: 3}
@@ -686,7 +680,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &2137282714
 MonoBehaviour:
@@ -701,8 +695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  chaseDist: 10
-  attackDist: 1
+  chaseDist: 100
+  attackDist: 5
+  turnSpeed: 100
   state: 0
 --- !u!1001 &365217306113789071
 PrefabInstance:
