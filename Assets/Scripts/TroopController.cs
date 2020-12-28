@@ -7,7 +7,7 @@ public class TroopController : MonoBehaviour {
     public float speed = 2;
     public float chaseDist = 5;
     public float attackDist = 5;
-    //public float turnSpeed = 5;
+    bool isDead = false;
 
     Animator anim;
     Transform target;
@@ -55,7 +55,6 @@ public class TroopController : MonoBehaviour {
         Debug.Log("Move update");
         Vector3 dir  = (target.position - transform.position).normalized;
 		Vector3 cross = Vector3.Cross(transform.forward, dir);
-		transform.Rotate(Vector3.up * cross.y * Time.deltaTime);
 
         float dist = Vector3.Distance(transform.position, transform.position);
 		if (dist > chaseDist) {
@@ -64,15 +63,22 @@ public class TroopController : MonoBehaviour {
         else if (dist < attackDist) {
 			state = State.Attack;
 			body.velocity = Vector3.zero;
-			//StartCoroutine(Attack());
+			StartCoroutine(Attack());
+            Debug.Log("Called attack coroutine");
 		}
         else {
 			body.velocity = dir * speed;
 			anim.SetBool("isWalking", true);
+            Debug.Log("is walking");
 		}
     }
 
-    //IEnumerator Shoot() {
-        //Ill attack when at a certain distance
-    //}
+    IEnumerator Attack() {
+        while (state == State.Attack && !isDead) {
+			anim.SetTrigger("Attack");
+			yield return new WaitForSeconds(2f);
+			float dist = Vector3.Distance(transform.position, transform.position);
+			if (dist > attackDist) state = State.Move;
+		} 
+    }
 }
