@@ -24,11 +24,11 @@ public class TroopController : MonoBehaviour {
     void Awake() {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        target = GameObject.FindGameObjectsWithTag("Target").transform;
+        target = GameObject.FindGameObjectWithTag("Target").transform;
     }
 
     void Update() {
-        switch (case) {
+        switch (state) {
             case State.Idle:
                 IdleUpdate();
                 break;
@@ -51,7 +51,7 @@ public class TroopController : MonoBehaviour {
         //A lot goes here
     }
 
-    IEnumerator Shoot() {
+    //IEnumerator Shoot() {
         //Ill attack when at a certain distance
-    }
+    //}
 }
