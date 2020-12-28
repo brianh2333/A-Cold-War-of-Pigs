@@ -68,4 +68,23 @@ public class PlayerPooler : MonoBehaviour
             return null;
         }
     }
+
+    public GameObject SpawnFromPool(string name)
+    {
+        if (poolDict.ContainsKey(name))
+        {
+            GameObject spawnedObj = poolDict[name].Dequeue();
+
+            spawnedObj.SetActive(true);
+
+            poolDict[name].Enqueue(spawnedObj);
+
+            return spawnedObj;
+        }
+        else
+        {
+            Debug.LogWarning("Pool w/ name " + name + " does not exist.");
+            return null;
+        }
+    }
 }
