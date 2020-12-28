@@ -23,7 +23,7 @@ public class TroopController : MonoBehaviour {
 
     public State state = State.Idle;
 
-    void Awake() {
+    void Awake () {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         target =  GameObject.FindGameObjectWithTag("Target").transform;
@@ -58,18 +58,20 @@ public class TroopController : MonoBehaviour {
 		Vector3 cross = Vector3.Cross(transform.forward, dir);
         transform.Rotate(Vector3.up * cross.y * turnSpeed * Time.deltaTime);
 
-        float dist = Vector3.Distance(transform.position, transform.position);
-		if (dist > chaseDist) {
+        float dist = Vector3.Distance(transform.position, target.position);
+        if (dist > chaseDist) {
 			state = State.Idle;
 		}
-        else if (dist < attackDist) {
+        else if (dist <= attackDist) {
 			state = State.Attack;
 			body.velocity = Vector3.zero;
-			StartCoroutine(Attack());
+            anim.SetBool("isWalking", false); //temp until attack anim
+            StartCoroutine(Attack());
             Debug.Log("Called attack coroutine");
 		}
-        else {
-			body.velocity = dir * speed;
+        else if (dist > attackDist && dist < chaseDist) {
+            Vector3 newPos = new Vector3(dir.x * speed * Time.fixedDeltaTime, 0, dir.z * speed * Time.fixedDeltaTime);
+            body.MovePosition(body.position + newPos * Time.fixedDeltaTime);
 			anim.SetBool("isWalking", true);
             Debug.Log("is walking");
 		}
@@ -79,8 +81,8 @@ public class TroopController : MonoBehaviour {
         while (state == State.Attack && !isDead) {
 			anim.SetTrigger("Attack");
 			yield return new WaitForSeconds(2f);
-			float dist = Vector3.Distance(transform.position, transform.position);
-			if (dist > attackDist) state = State.Move;
+			float dist = Vector3.Distance(transform.position, target.position);
+            if (dist > attackDist) state = State.Move;
 		} 
     }
 }
