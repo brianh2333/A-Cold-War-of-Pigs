@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerTroopSpawner : MonoBehaviour
 {
+    public static PlayerTroopSpawner instance; //Singleton
     public GameObject[] spawnpoints;
 
     public int merits = 0;
@@ -20,6 +21,7 @@ public class PlayerTroopSpawner : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null) instance = this;
         spawnpoints = GameObject.FindGameObjectsWithTag("PlayerSpawn");
         meritsText.text = "Merits: " + merits;
         meritsSaved = merits;
@@ -46,5 +48,11 @@ public class PlayerTroopSpawner : MonoBehaviour
         }
         else
             Debug.Log("Insufficient merits!");
+    }
+
+    //will be modified when enemies are added.
+    public void AddMerits(int amount)
+    {
+        merits += amount;
     }
 }

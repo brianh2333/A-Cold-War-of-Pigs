@@ -20,6 +20,7 @@ public class Projectile : MonoBehaviour {
         HealthController health = g.GetComponent<HealthController>();
         if (health != null) {
             health.TakeDamage(attackDamage);
+            PlayerTroopSpawner.instance.AddMerits(2);
         }
     }
 }
