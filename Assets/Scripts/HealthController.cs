@@ -9,14 +9,28 @@ public class HealthController : MonoBehaviour
 
     public bool isPlayer, isEnemy;
 
-    private void Awake()
+    public delegate void HealthChanged(float health);
+    public event HealthChanged OnHealthChanged = delegate { };
+
+    void Awake()
+    {
+        health = maxHealth;
+    }
+    void OnEnable()
     {
         health = maxHealth;
     }
 
+
     public void TakeDamage(float damage)
     {
-        float oldHealth = health;
         health -= damage;
+        health = Mathf.Clamp(health, 0, maxHealth);
+        OnHealthChanged(health);
+        if( health <= 0)
+        {
+            Debug.Log("dead");
+            gameObject.SetActive(false);
+        }
     }
 }
