@@ -29,8 +29,9 @@ public class HealthController : MonoBehaviour
         OnHealthChanged(health);
         if( health <= 0)
         {
-            Debug.Log("dead");
             gameObject.SetActive(false);
+            if (gameObject.CompareTag("Player"))
+                GameManager.instance.CIAAlive--;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     
@@ -8,10 +9,28 @@ public class GameManager : MonoBehaviour {
 
     public Animator troopsUIAnimator;
 
+    public Text CIAAliveText;
+    public Text targetsRemainingText;
+
+    public int CIAAlive = 0;
+    public int targetsRemaining = 0;
+
     bool troopsUIOpen = false;
 
     void Awake() {
         if (instance == null) instance = this;
+    }
+
+    private void Update()
+    {
+        targetsRemaining = GameObject.FindGameObjectsWithTag("Target").Length;
+        DisplayCounters();
+    }
+
+    public void DisplayCounters()
+    {
+        CIAAliveText.text = "CIA alive: " + CIAAlive;
+        targetsRemainingText.text = "Targets remaining: " + targetsRemaining;
     }
 
     public void TroopsUIHover() {
@@ -28,6 +47,7 @@ public class GameManager : MonoBehaviour {
             troopsUIAnimator.SetBool("Hovered", false);
         }
     }
+
 
     public void TroopsUIHovered() {
         troopsUIOpen = true;

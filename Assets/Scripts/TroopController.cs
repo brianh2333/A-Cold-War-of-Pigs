@@ -63,7 +63,7 @@ public class TroopController : MonoBehaviour {
         if (dist > chaseDist) {
 			state = State.Idle;
 		}
-        else if (dist <= attackDist) {
+        else if ((dist <= attackDist) && GameManager.instance.targetsRemaining != 0) {
 			state = State.Attack;
 			body.velocity = Vector3.zero;
             StartCoroutine(Attack());
@@ -81,7 +81,7 @@ public class TroopController : MonoBehaviour {
             fireProjectile.Shoot();
 			yield return new WaitForSeconds(2f);
 			float dist = Vector3.Distance(transform.position, target.position);
-            if (dist > attackDist) state = State.Move;
+            if (dist > attackDist || GameManager.instance.targetsRemaining == 0) state = State.Move;
 		} 
     }
 }

@@ -42,6 +42,7 @@ public class PlayerTroopSpawner : MonoBehaviour
             merits -= troop1Cost;
             GameObject obj = PlayerPooler.instance.SpawnFromPool("Troop1", spawnpoints[Random.Range(0, spawnpoints.Length)].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y + 120, obj.transform.eulerAngles.z);
+            GameManager.instance.CIAAlive++;
         }
         else
             Debug.Log("Insufficient merits!");

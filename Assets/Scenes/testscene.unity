@@ -588,6 +588,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058672543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1399473301389021310, guid: 0f7bc3e659444b94cbe3248af17a046a,
+    type: 3}
+  m_PrefabInstance: {fileID: 365217306113789071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1080327118 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
@@ -633,6 +645,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1431895991 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7496810614349059699, guid: 0f7bc3e659444b94cbe3248af17a046a,
+    type: 3}
+  m_PrefabInstance: {fileID: 365217306113789071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1702598922 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1177628196586321820, guid: 0f7bc3e659444b94cbe3248af17a046a,
@@ -1185,9 +1209,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
+      propertyPath: CIAAliveText
+      value: 
+      objectReference: {fileID: 1431895991}
+    - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
       propertyPath: troopsUIAnimator
       value: 
       objectReference: {fileID: 1948995558}
+    - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
+      propertyPath: targetsRemainingText
+      value: 
+      objectReference: {fileID: 1058672543}
     - target: {fileID: 2707815372073908486, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: m_Name
