@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Target
   - PlayerSpawn
+  - Bullet
   layers:
   - Default
   - TransparentFX

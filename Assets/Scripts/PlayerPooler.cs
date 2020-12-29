@@ -39,6 +39,9 @@ public class PlayerPooler : MonoBehaviour
             {
                 GameObject obj = Instantiate(pool.prefab);
 
+                if (obj.CompareTag("Bullet"))
+                    obj.transform.parent = GameObject.Find("Bullets").transform;
+
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
@@ -57,6 +60,7 @@ public class PlayerPooler : MonoBehaviour
             spawnedObj.SetActive(true);
             spawnedObj.transform.position = position;
             spawnedObj.transform.rotation = rotation;
+
 
             poolDict[name].Enqueue(spawnedObj);
 
