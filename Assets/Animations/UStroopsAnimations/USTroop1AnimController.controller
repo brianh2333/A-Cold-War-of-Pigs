@@ -92,7 +92,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleShoot
+  m_Name: Shoot
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -105,7 +105,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3807099343068666649, guid: b7135e0f76bf56740b8de036b257f15f,
+  m_Motion: {fileID: 1827226128182048838, guid: 1ad7567c1d85be04ab6e97a5f6bc3196,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

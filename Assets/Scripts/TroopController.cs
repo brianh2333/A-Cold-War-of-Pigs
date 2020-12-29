@@ -13,6 +13,7 @@ public class TroopController : MonoBehaviour {
     Animator anim;
     Transform target;
     Rigidbody body;
+    public FireProjectile fireProjectile;
 
     public enum State {
         Idle,
@@ -27,6 +28,7 @@ public class TroopController : MonoBehaviour {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         target =  GameObject.FindGameObjectWithTag("Target").transform;
+        fireProjectile.GetComponent<FireProjectile>();
     }
 
     void Update() {
@@ -76,6 +78,7 @@ public class TroopController : MonoBehaviour {
     IEnumerator Attack() {
         while (state == State.Attack && !isDead) {
 			anim.SetTrigger("Attack");
+            fireProjectile.Shoot();
 			yield return new WaitForSeconds(2f);
 			float dist = Vector3.Distance(transform.position, target.position);
             if (dist > attackDist) state = State.Move;
