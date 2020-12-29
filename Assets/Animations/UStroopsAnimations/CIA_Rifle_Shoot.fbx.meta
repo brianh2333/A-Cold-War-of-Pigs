@@ -6,7 +6,62 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Shoot
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boots1
+    second: {fileID: 2100000, guid: b15ca7e477788114bb7198c2dafb6547, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CamoPatternBrigadista1
+    second: {fileID: 2100000, guid: 6992f1ff0c15fb544a2fd8a3ec0f2210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalTex
+    second: {fileID: 2100000, guid: 8a89355dbad802a4199fafc0bbb98a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkinColor1
+    second: {fileID: 2100000, guid: 8c2bb1268425ff64093e4dcdfa3d82fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Webbing1
+    second: {fileID: 2100000, guid: 94402405134b6374ba182e9d4902b2c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodGun
+    second: {fileID: 2100000, guid: 2f943e917361d3744bf70a49022d84a3, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CubanWestCamoFrogskin
+    second: {fileID: 2800000, guid: 2d5131a028ea87749821ba542c28265c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lighter Green
+    second: {fileID: 2800000, guid: 10c4ad1f089e41b45aa29d985f90a93c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal3
+    second: {fileID: 2800000, guid: ab021c55706a82a45be6e0f8ae8ab600, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2800000, guid: b0371c87f740812438ae06aa9389ae46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: black-leather-texture
+    second: {fileID: 2800000, guid: 51f7a7725f42962469d2761da742022d, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
