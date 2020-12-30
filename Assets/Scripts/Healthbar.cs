@@ -12,13 +12,14 @@ public class Healthbar : MonoBehaviour
     {
         slider = GetComponentInChildren<Slider>();
         healthController = GetComponentInParent<HealthController>();
+        slider.maxValue = healthController.maxHealth;
         slider.value = healthController.maxHealth;
     }
 
     void OnEnable()
     {
         healthController.OnHealthChanged += ChangeHealth;
-        slider.value = healthController.health;
+        slider.value = healthController.maxHealth;
         //StartCoroutine(Test(40f));
     }
 

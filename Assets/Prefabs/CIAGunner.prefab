@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 501420443717644527}
   m_Layer: 0
   m_Name: CIAGunner
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,6 +888,7 @@ MonoBehaviour:
   health: 0
   isPlayer: 1
   isEnemy: 0
+  anim: {fileID: 0}
 --- !u!114 &501420443717644524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,10 +901,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccf26e3c900d2745a3945b4c49ba6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10
   chaseDist: 100
   attackDist: 5
   turnSpeed: 100
+  target: {fileID: 0}
   fireProjectile: {fileID: 501420443717644527}
   state: 0
 --- !u!114 &501420443717644527

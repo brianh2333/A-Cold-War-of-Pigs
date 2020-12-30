@@ -11,7 +11,7 @@ public class TroopController : MonoBehaviour {
     bool isDead = false;
 
     Animator anim;
-    Transform target;
+    public Transform target;
     Rigidbody body;
     public FireProjectile fireProjectile;
 
@@ -27,25 +27,35 @@ public class TroopController : MonoBehaviour {
     void Awake () {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        target =  GameObject.FindGameObjectWithTag("Target").transform;
         fireProjectile.GetComponent<FireProjectile>();
+        if (GameObject.FindGameObjectWithTag("Target") != null)
+            target = GameObject.FindGameObjectWithTag("Target").transform;
     }
 
     void Update() {
-        switch (state) {
-            case State.Idle:
-                IdleUpdate();
-                break;
-            case State.Move:
-                MoveUpdate();
-                break;
-            default:
-                break;
+        if (GameManager.instance.targetsRemaining > 0)
+        {
+            target = GameObject.FindGameObjectWithTag("Target").transform;
         }
+        if (target != null)
+        {
+            switch (state)
+            {
+                case State.Idle:
+                    IdleUpdate();
+                    break;
+                case State.Move:
+                    MoveUpdate();
+                    break;
+                default:
+                    break;
+            }
+        }
+
     }
 
     void IdleUpdate() {
-        Debug.Log("Idle update");
+        //Debug.Log("Idle update");
         anim.SetBool("isWalking", false);
 		body.velocity = Vector3.zero;
 		float dist = Vector3.Distance(transform.position, target.position);

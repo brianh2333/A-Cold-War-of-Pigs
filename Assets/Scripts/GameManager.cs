@@ -11,20 +11,33 @@ public class GameManager : MonoBehaviour {
 
     public Text CIAAliveText;
     public Text targetsRemainingText;
+    public Text hourText;
 
     public int CIAAlive = 0;
     public int targetsRemaining = 0;
+    public int hour;
 
     bool troopsUIOpen = false;
 
+
     void Awake() {
+        CIAAlive = 0;
+        targetsRemaining = 0;
         if (instance == null) instance = this;
+
+
     }
 
     private void Update()
     {
         targetsRemaining = GameObject.FindGameObjectsWithTag("Target").Length;
         DisplayCounters();
+        DisplayHour();
+    }
+
+    public void DisplayHour()
+    {
+        hourText.text = "Hour " + hour;
     }
 
     public void DisplayCounters()
