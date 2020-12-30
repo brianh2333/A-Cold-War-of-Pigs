@@ -78,8 +78,20 @@ public class TroopController : MonoBehaviour {
     IEnumerator Attack() {
         while (state == State.Attack && !isDead) {
 			anim.SetTrigger("Attack");
-            fireProjectile.Shoot();
-			yield return new WaitForSeconds(2f);
+            if (transform.name.Contains("Gunner"))
+            {
+                fireProjectile.Shoot();
+                yield return new WaitForSeconds(.5f);
+                fireProjectile.Shoot();
+                yield return new WaitForSeconds(.5f);
+                fireProjectile.Shoot();
+                yield return new WaitForSeconds(2f);
+            }
+            else if (transform.name.Contains("Rifleman"))
+            {
+                fireProjectile.Shoot();
+                yield return new WaitForSeconds(2f);
+            }
 			float dist = Vector3.Distance(transform.position, target.position);
             if (dist > attackDist || GameManager.instance.targetsRemaining == 0) state = State.Move;
 		} 
