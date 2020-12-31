@@ -29,7 +29,7 @@ public class HealthController : MonoBehaviour
     {
         health -= damage;
         health = Mathf.Clamp(health, 0, maxHealth);
-        OnHealthChanged(health);
+        OnHealthChanged(damage);
       
         if( health <= 0)
         {
@@ -43,7 +43,7 @@ public class HealthController : MonoBehaviour
     IEnumerator OnDeath()
     {
         anim.SetTrigger("Death");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         gameObject.SetActive(false);
     }
 }
