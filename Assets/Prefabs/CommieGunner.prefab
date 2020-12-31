@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8702626593727353017, guid: c25f3e46887c2194eb001396ca513ba6, type: 3}
+  gunShootSound: {fileID: 0}
 --- !u!114 &1531169145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,12 +90,12 @@ PrefabInstance:
     - target: {fileID: 4458836883894386239, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4458836883894386239, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4579538967088512248, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
@@ -304,6 +305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CommieGunner
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7dc9735e0e8d67344b05ebe41fb43294,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7dc9735e0e8d67344b05ebe41fb43294,
         type: 3}
