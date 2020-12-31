@@ -29,7 +29,6 @@ public class EnemyTroopController : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        fireProjectile.GetComponent<FireProjectile>();
         if (GameObject.FindGameObjectWithTag("Player") != null)
             target = GameObject.FindGameObjectWithTag("Player").transform;
     }
