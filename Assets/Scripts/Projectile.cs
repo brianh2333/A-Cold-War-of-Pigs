@@ -8,13 +8,25 @@ public class Projectile : MonoBehaviour {
     public float attackDamage = 10;
     public float lifetime = 3f;
     private float seconds;
+    public GameObject target;
+    Rigidbody body;
 
-    private void OnEnable()
+    void Awake() {
+        body = GetComponent<Rigidbody>();
+    }
+
+    void OnEnable()
     {
+        target = GameObject.FindGameObjectWithTag("Target");
         seconds = lifetime;
     }
 
     void Update() {
+        Vector3 dir = target.transform.position - transform.position;
+        dir = dir.normalized;
+        body.velocity = dir * speed;
+        transform.forward = dir;
+
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         if (seconds <= 0)
             this.gameObject.SetActive(false);

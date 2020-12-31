@@ -27,7 +27,6 @@ public class TroopController : MonoBehaviour {
     void Awake () {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        fireProjectile.GetComponent<FireProjectile>();
         if (GameObject.FindGameObjectWithTag("Target") != null)
             target = GameObject.FindGameObjectWithTag("Target").transform;
     }
