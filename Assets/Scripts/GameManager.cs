@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour {
 
 
     void Awake() {
+        hour++;
         CIAAlive = 0;
         targetsRemaining = 0;
         if (instance == null) instance = this;

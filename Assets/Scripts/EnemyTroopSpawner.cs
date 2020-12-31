@@ -56,7 +56,7 @@ public class EnemyTroopSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((hourIndex != GameManager.instance.hour || (state == SpawnState.START || state == SpawnState.SPAWNING)) || spawn)
+        if ((hourIndex != GameManager.instance.hour-1 || (state == SpawnState.START || state == SpawnState.SPAWNING)) || spawn)
         {
 
             if (spawn)
@@ -89,6 +89,7 @@ public class EnemyTroopSpawner : MonoBehaviour
             enemyIndex = 0;
             spawnIndex = 0;
             hourIndex++;
+            GameManager.instance.hour++;
             spawn = true;
         }
     }

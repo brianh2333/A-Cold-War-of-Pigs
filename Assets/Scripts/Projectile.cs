@@ -15,7 +15,6 @@ public class Projectile : MonoBehaviour {
     }
 
     void Update() {
-        //GetComponent<Rigidbody>().AddForce(transform.forward * speed, ForceMode.Impulse);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         if (seconds <= 0)
             this.gameObject.SetActive(false);
