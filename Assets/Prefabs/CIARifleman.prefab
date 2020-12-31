@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccf26e3c900d2745a3945b4c49ba6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 25
   chaseDist: 100
   attackDist: 5
   turnSpeed: 100
@@ -78,6 +78,7 @@ MonoBehaviour:
   health: 0
   isPlayer: 1
   isEnemy: 0
+  anim: {fileID: 0}
 --- !u!1001 &2732820059713061339
 PrefabInstance:
   m_ObjectHideFlags: 0

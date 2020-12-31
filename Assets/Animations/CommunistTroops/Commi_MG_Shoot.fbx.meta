@@ -6,7 +6,47 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Attack
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boots
+    second: {fileID: 2100000, guid: 02c17b94d1ba1d846a95d6456468a249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boots1
+    second: {fileID: 2100000, guid: f2d60d84c2b0f0a4290050dda4b93845, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CubanGreen1
+    second: {fileID: 2100000, guid: 5ebf78882d8f6ab4e9f4805d28dd28ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalTex
+    second: {fileID: 2100000, guid: 94e0b1122a71df74c8b77ac64d251934, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkinColor1
+    second: {fileID: 2100000, guid: da3a7ebc36754e44ab76d063155b17f7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal3
+    second: {fileID: 2800000, guid: 0556c8c94e7b0214ea457581246ffbe5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: black-leather-texture
+    second: {fileID: 2800000, guid: c6b62f2c141c58d4a9ce918930e0606b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: olive-green-micro-fiber-cloth-fabric-texture
+    second: {fileID: 2800000, guid: eb4118f42244be8479939f4fb208f1a6, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
