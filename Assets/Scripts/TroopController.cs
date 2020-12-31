@@ -9,11 +9,13 @@ public class TroopController : MonoBehaviour {
     public float attackDist = 5;
     public float turnSpeed = 100;
     bool isDead = false;
+    bool isEnabled = false;
 
     Animator anim;
     public Transform target;
     Rigidbody body;
     public FireProjectile fireProjectile;
+    public AudioSource spawnSound;
 
     public enum State {
         Idle,
@@ -27,8 +29,15 @@ public class TroopController : MonoBehaviour {
     void Awake () {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        isEnabled = true;
         if (GameObject.FindGameObjectWithTag("Target") != null)
             target = GameObject.FindGameObjectWithTag("Target").transform;
+    }
+    
+    void Start() {
+        if (isEnabled == true) {
+            spawnSound.Play();
+        }
     }
 
     void Update() {
