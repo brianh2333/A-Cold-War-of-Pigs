@@ -39,6 +39,9 @@ public class EnemyPooler : MonoBehaviour
             {
                 GameObject obj = Instantiate(pool.prefab);
 
+                if (obj.CompareTag("Bullet"))
+                    obj.transform.parent = GameObject.Find("Bullets").transform;
+
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }

@@ -201,11 +201,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  chaseDist: 5
-  attackDist: 30
+  chaseDist: 8
+  attackDist: 7
   turnSpeed: 100
   target: {fileID: 0}
   fireProjectile: {fileID: 270750712}
+  health: {fileID: 0}
   state: 0
 --- !u!1001 &4528473004102971161
 PrefabInstance:

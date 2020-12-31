@@ -1561,7 +1561,7 @@ PrefabInstance:
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: merits
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1641,7 +1641,7 @@ PrefabInstance:
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1651,7 +1651,27 @@ PrefabInstance:
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.data[0].size
-      value: 10
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[1].name
+      value: EnemyBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[1].size
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[2].name
+      value: GunnerBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[2].size
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1659,10 +1679,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: 8702626593727353014, guid: 6ec6c7d6bbc43a3499a61081eba0b323,
+        type: 3}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 8702626593727353014, guid: e562538e12a580e45ae6ac477d80fe81,
+        type: 3}
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1677,7 +1709,7 @@ PrefabInstance:
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.data[1].size
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1687,6 +1719,16 @@ PrefabInstance:
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.data[2].size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[3].name
+      value: GunnerBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[3].size
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
@@ -1706,6 +1748,12 @@ PrefabInstance:
       propertyPath: pools.Array.data[2].prefab
       value: 
       objectReference: {fileID: 501420443717644520, guid: 3ef7ee747d4d4c14d87c00a8f4714b0f,
+        type: 3}
+    - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[3].prefab
+      value: 
+      objectReference: {fileID: 8702626593727353014, guid: e562538e12a580e45ae6ac477d80fe81,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}

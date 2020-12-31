@@ -14,6 +14,7 @@ public class EnemyTroopController : MonoBehaviour
     public Transform target;
     Rigidbody body;
     public FireProjectile fireProjectile;
+    public HealthController health;
 
     public enum State
     {
@@ -27,6 +28,7 @@ public class EnemyTroopController : MonoBehaviour
 
     void Awake()
     {
+        health = GetComponent<HealthController>();
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         if (GameObject.FindGameObjectWithTag("Player") != null)
@@ -68,6 +70,14 @@ public class EnemyTroopController : MonoBehaviour
                 state = State.Move;
             }
         }
+        else
+        {
+            float dist = Vector3.Distance(transform.position, target.position);
+            if (dist < chaseDist)
+            {
+                state = State.Move;
+            }
+        }
     }
 
     void MoveUpdate()
@@ -81,7 +91,7 @@ public class EnemyTroopController : MonoBehaviour
         {
             state = State.Idle;
         }
-        else if ((dist <= attackDist) && GameManager.instance.CIAAlive != 0)
+        else if ((dist <= attackDist) && GameManager.instance.CIAAlive != 0 && health.health > 0)
         {
             state = State.Attack;
             body.velocity = Vector3.zero;
@@ -97,7 +107,7 @@ public class EnemyTroopController : MonoBehaviour
 
     IEnumerator Attack()
     {
-        while (state == State.Attack && !isDead)
+        while (state == State.Attack && !isDead && health.health > 0)
         {
             anim.SetBool("Attack", true);
             if (transform.name.Contains("Gunner"))

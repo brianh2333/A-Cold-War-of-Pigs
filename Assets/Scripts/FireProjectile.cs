@@ -8,7 +8,24 @@ public class FireProjectile : MonoBehaviour {
     public AudioSource gunShootSound;
 
     public void Shoot() {
-        PlayerPooler.instance.SpawnFromPool("Bullet", transform.position + transform.forward, transform.rotation);
-        gunShootSound.Play();
+        if (transform.root.CompareTag("Player"))
+        {
+            if (transform.root.name.Contains("Gunner"))
+                PlayerPooler.instance.SpawnFromPool("GunnerBullet", transform.position + transform.forward, transform.rotation);
+            else
+                PlayerPooler.instance.SpawnFromPool("Bullet", transform.position + transform.forward, transform.rotation);
+
+            gunShootSound.Play();
+        }
+        else if (transform.root.CompareTag("Target"))
+        {
+            if (transform.root.name.Contains("Gunner"))
+                PlayerPooler.instance.SpawnFromPool("GunnerBullet", transform.position + transform.forward, transform.rotation);
+            else
+                PlayerPooler.instance.SpawnFromPool("Bullet", transform.position + transform.forward, transform.rotation);
+
+            gunShootSound.Play();
+        }
+
     }
 }

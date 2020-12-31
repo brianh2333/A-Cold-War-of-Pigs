@@ -13,6 +13,7 @@ public class HealthController : MonoBehaviour
     public event HealthChanged OnHealthChanged = delegate { };
 
     public Animator anim;
+    private bool canDie;
 
     void Awake()
     {
@@ -22,6 +23,7 @@ public class HealthController : MonoBehaviour
     void OnEnable()
     {
         health = maxHealth;
+        canDie = true;
     }
 
 
@@ -31,8 +33,9 @@ public class HealthController : MonoBehaviour
         health = Mathf.Clamp(health, 0, maxHealth);
         OnHealthChanged(damage);
       
-        if( health <= 0)
+        if( health <= 0 && canDie)
         {
+            canDie = false;
             StartCoroutine(OnDeath());
             if (gameObject.CompareTag("Player"))
                 GameManager.instance.CIAAlive--;
@@ -45,5 +48,6 @@ public class HealthController : MonoBehaviour
         anim.SetTrigger("Death");
         yield return new WaitForSeconds(1.5f);
         gameObject.SetActive(false);
+        GameManager.instance.CIAAlive--;
     }
 }

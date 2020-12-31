@@ -15,6 +15,7 @@ public class TroopController : MonoBehaviour {
     public Transform target;
     Rigidbody body;
     public FireProjectile fireProjectile;
+    public HealthController health;
     public AudioSource spawnSound;
 
     public enum State {
@@ -27,6 +28,7 @@ public class TroopController : MonoBehaviour {
     public State state = State.Idle;
 
     void Awake () {
+        health = GetComponent<HealthController>();
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         isEnabled = true;
@@ -81,7 +83,7 @@ public class TroopController : MonoBehaviour {
         if (dist > chaseDist) {
 			state = State.Idle;
 		}
-        else if ((dist <= attackDist) && GameManager.instance.targetsRemaining != 0) {
+        else if ((dist <= attackDist) && GameManager.instance.targetsRemaining != 0 && health.health > 0) {
 			state = State.Attack;
 			body.velocity = Vector3.zero;
             StartCoroutine(Attack());
@@ -94,7 +96,7 @@ public class TroopController : MonoBehaviour {
     }
 
     IEnumerator Attack() {
-        while (state == State.Attack && !isDead) {
+        while (state == State.Attack && !isDead && health.health > 0) {
 			anim.SetTrigger("Attack");
             if (transform.name.Contains("Gunner"))
             {
