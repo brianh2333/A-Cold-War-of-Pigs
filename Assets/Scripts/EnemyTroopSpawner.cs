@@ -114,7 +114,7 @@ public class EnemyTroopSpawner : MonoBehaviour
         {
             GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[hourIndex].enemies[enemyIndex].name, spawnpoints[laneIndex].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y - 90, obj.transform.eulerAngles.z);
-            laneIndex = (laneIndex + 1) % 3;
+            laneIndex = (laneIndex + 1) % 6;
             yield return new WaitForSeconds(3f);
         }
         GameManager.instance.targetsRemaining++;

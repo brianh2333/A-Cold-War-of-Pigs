@@ -849,7 +849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &501420443717644526
 Transform:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b3280d84f8ef749b1337541dffd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 250
   health: 0
   isPlayer: 1
   isEnemy: 0
@@ -2862,17 +2862,17 @@ PrefabInstance:
     - target: {fileID: 5147018490631808113, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8854265
+      value: -0.46478018
       objectReference: {fileID: 0}
     - target: {fileID: 5147018490631808113, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5147018490631808113, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.46477944
+      value: 0.88542616
       objectReference: {fileID: 0}
     - target: {fileID: 5147018490631808113, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
@@ -2897,7 +2897,7 @@ PrefabInstance:
     - target: {fileID: 5147018490631808113, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 55.392002
+      value: 235.392
       objectReference: {fileID: 0}
     - target: {fileID: 5147018490631808113, guid: 33890f34257c1dc4d8291afeaa40aa40,
         type: 3}

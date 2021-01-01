@@ -50,11 +50,21 @@ public class HealthController : MonoBehaviour
 
     IEnumerator OnDeath()
     {
+        string tag = gameObject.tag;
         gameObject.tag = "Untagged";
         anim.SetTrigger("Death");
-        yield return new WaitForSeconds(1.4f);
-        if ( !(gameObject.CompareTag("Target") && gameObject.name.Contains("Gunner")) )
+        if (tag == "Player") {
+            yield return new WaitForSeconds(1.5f);
             transform.Translate(Vector3.down * Time.deltaTime * 50f);
+        }
+        else
+        {
+            if ( !(tag == "Gunner") )
+            {
+                yield return new WaitForSeconds(2f);
+                transform.Translate(Vector3.down * Time.deltaTime * 50f);
+            }
+        }
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
     }

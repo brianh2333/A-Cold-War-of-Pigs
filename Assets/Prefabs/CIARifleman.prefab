@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  chaseDist: 100
+  chaseDist: 125
   attackDist: 7
   turnSpeed: 100
   target: {fileID: 0}

@@ -124,6 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  attackDamage: 5
+  attackDamage: 10
   lifetime: 3
   target: {fileID: 0}

@@ -46,7 +46,7 @@ public class Projectile : MonoBehaviour {
             if (health != null)
             {
                 health.TakeDamage(attackDamage);
-                PlayerTroopSpawner.instance.AddMerits(2);
+                PlayerTroopSpawner.instance.AddMerits(3);
             }
         }
     }
