@@ -40,6 +40,7 @@ public class EnemyTroopSpawner : MonoBehaviour
     private bool spawn = true;
 
     int empIndex = 0;
+    int laneIndex = 0;
     int spawnIndex = 0;
 
     void Awake()
@@ -49,6 +50,7 @@ public class EnemyTroopSpawner : MonoBehaviour
         hourIndex = 0;
         totalAmount = 0;
         empIndex = 0;
+        laneIndex = 0;
         spawnIndex = 0;
 
     }
@@ -109,8 +111,9 @@ public class EnemyTroopSpawner : MonoBehaviour
         }
         else
         {
-            GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[hourIndex].enemies[enemyIndex].name, spawnpoints[Random.Range(0, spawnpoints.Length)].transform.position, Quaternion.identity);
+            GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[hourIndex].enemies[enemyIndex].name, spawnpoints[laneIndex].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y - 90, obj.transform.eulerAngles.z);
+            laneIndex = (laneIndex + 1) % 3;
             yield return new WaitForSeconds(3f);
         }
         GameManager.instance.targetsRemaining++;

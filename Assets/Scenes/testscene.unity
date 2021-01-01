@@ -294,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237815677}
   m_LocalRotation: {x: 0.12505427, y: -0, z: -0, w: 0.99214995}
-  m_LocalPosition: {x: 1.1, y: 1.9, z: -5.76}
+  m_LocalPosition: {x: 1.1, y: 1.9, z: -6.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1582,7 +1582,7 @@ PrefabInstance:
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: merits
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1816,11 +1816,11 @@ MonoBehaviour:
   waves:
   - name: Hour 1
     enemies:
-    - name: Gunner
-      amount: 10
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+    - name: Rifleman
+      amount: 3
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    amount: 1
+    amount: 3
   - name: Hour 2
     enemies:
     - name: Rifleman
@@ -1976,6 +1976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Target
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762443, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
