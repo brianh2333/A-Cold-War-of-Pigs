@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour {
         targetsRemaining = 0;
         if (instance == null) instance = this;
 
+        camera.transform.position = new Vector3(-2.8f, 1.9f, -6.3f);
+        playerTroopSpawns.transform.position = new Vector3(-5.27f, 0.2763095f, .03f);
+        enemyTroopSpawns.transform.position = new Vector3(3.93f, 0.2763095f, .03f);
+
 
     }
 
