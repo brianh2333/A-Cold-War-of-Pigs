@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour {
     
@@ -9,14 +10,21 @@ public class MainMenuScript : MonoBehaviour {
     public GameObject instructionsPanel;
     public GameObject creditsPanel;
 
+    public GameObject historyText;
+    public GameObject background;
+
+    public Animator backgroundAnim;
+    public Animator historyAnim;
+
     public void Start() {
+        historyText.SetActive(false);
         middlePanel.SetActive(true);
         instructionsPanel.SetActive(false);
         creditsPanel.SetActive(false);
     }
 
     public void StartGame() {
-        SceneManager.LoadScene(1);
+        StartCoroutine(StartPressed());
     }
 
     public void Instructions() {
@@ -39,5 +47,21 @@ public class MainMenuScript : MonoBehaviour {
 
     public void QuitGame() {
         Application.Quit();
+    }
+
+    public void Skip()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    IEnumerator StartPressed()
+    {
+        backgroundAnim.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(2f);
+        background.SetActive(false);
+        historyText.SetActive(true);
+        historyAnim.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(20f);
+        SceneManager.LoadScene(1);
     }
 }
