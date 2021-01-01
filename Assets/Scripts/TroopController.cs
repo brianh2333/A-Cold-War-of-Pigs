@@ -88,7 +88,7 @@ public class TroopController : MonoBehaviour {
 			body.velocity = Vector3.zero;
             StartCoroutine(Attack());
 		}
-        else if (dist > attackDist && dist < chaseDist) {
+        else if (dist > attackDist && dist < chaseDist && health.health > 0) {
             Vector3 newPos = new Vector3(dir.x * speed * Time.fixedDeltaTime, 0, dir.z * speed * Time.fixedDeltaTime);
             body.MovePosition(body.position + newPos * Time.fixedDeltaTime);
 			anim.SetBool("isWalking", true);

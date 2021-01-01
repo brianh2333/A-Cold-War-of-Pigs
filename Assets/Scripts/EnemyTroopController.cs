@@ -65,7 +65,7 @@ public class EnemyTroopController : MonoBehaviour
             anim.SetBool("isWalking", false);
             body.velocity = Vector3.zero;
             float dist = Vector3.Distance(transform.position, target.position);
-            if (dist < chaseDist)
+            if (dist < chaseDist && target != null)
             {
                 state = State.Move;
             }
@@ -87,7 +87,7 @@ public class EnemyTroopController : MonoBehaviour
         transform.Rotate(Vector3.up * cross.y * turnSpeed * Time.deltaTime);
 
         float dist = Vector3.Distance(transform.position, target.position);
-        if (dist > chaseDist || ( (name.Contains("Gunner")) && dist > attackDist) )
+        if (dist > chaseDist || ( (name.Contains("Gunner")) && dist > attackDist)  || !target.gameObject.activeSelf)
         {
             state = State.Idle;
         }
@@ -97,7 +97,7 @@ public class EnemyTroopController : MonoBehaviour
             body.velocity = Vector3.zero;
             StartCoroutine(Attack());
         }
-        else if ( ( dist > attackDist && dist < chaseDist ) && !name.Contains("Gunner"))
+        else if ( ( dist > attackDist && dist < chaseDist ) && !name.Contains("Gunner") && health.health > 0 )
         {
             Vector3 newPos = new Vector3(dir.x * speed * Time.fixedDeltaTime, 0, dir.z * speed * Time.fixedDeltaTime);
             body.MovePosition(body.position + newPos * Time.fixedDeltaTime);
@@ -109,7 +109,7 @@ public class EnemyTroopController : MonoBehaviour
     {
         while (state == State.Attack && !isDead && health.health > 0)
         {
-            anim.SetBool("Attack", true);
+            anim.SetTrigger("Attack");
             if (transform.name.Contains("Gunner"))
             {
                 Debug.Log("Shoot");
@@ -125,7 +125,6 @@ public class EnemyTroopController : MonoBehaviour
                 fireProjectile.Shoot();
                 yield return new WaitForSeconds(2f);
             }
-            anim.SetBool("Attack", false);
             float dist = Vector3.Distance(transform.position, target.position);
             if ((dist > attackDist || GameManager.instance.targetsRemaining == 0) && !name.Contains("Gunner"))
                 state = State.Move;

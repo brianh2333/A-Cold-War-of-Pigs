@@ -14,11 +14,13 @@ public class HealthController : MonoBehaviour
 
     public Animator anim;
     private bool canDie;
+    private Rigidbody rb;
 
     void Awake()
     {
         health = maxHealth;
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
     void OnEnable()
     {
@@ -46,7 +48,9 @@ public class HealthController : MonoBehaviour
     IEnumerator OnDeath()
     {
         anim.SetTrigger("Death");
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.4f);
+        transform.Translate(Vector3.down * Time.deltaTime * 70f);
+        yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
     }
 }
