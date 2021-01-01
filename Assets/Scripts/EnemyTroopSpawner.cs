@@ -80,10 +80,10 @@ public class EnemyTroopSpawner : MonoBehaviour
             {
                 state = SpawnState.WAITING;
             }
-            else if (state == SpawnState.WAITING && GameManager.instance.targetsRemaining == 0)
-            {
-                state = SpawnState.FINISHED;
-            }
+        }
+        else if (state == SpawnState.WAITING && GameManager.instance.targetsRemaining == 0)
+        {
+            state = SpawnState.FINISHED;
         }
         else if (state == SpawnState.FINISHED)
         {
@@ -92,6 +92,7 @@ public class EnemyTroopSpawner : MonoBehaviour
             spawnIndex = 0;
             hourIndex++;
             GameManager.instance.hour++;
+            GameManager.instance.MoveCamera(true);
             spawn = true;
         }
     }

@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour {
     bool troopsUIOpen = false;
 
     public GameObject retryPanel;
+    public GameObject playerTroopSpawns;
+    public GameObject enemyTroopSpawns;
+    public Camera camera;
 
 
     void Awake() {
@@ -40,6 +43,16 @@ public class GameManager : MonoBehaviour {
         DisplayHour();
 
         RetryPanel();
+    }
+
+    public void MoveCamera(bool move)
+    {
+        if (move == true)
+        {
+            camera.transform.Translate(Vector2.right * Time.deltaTime * 20f);
+            playerTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 20f);
+            enemyTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 20f); ;
+        }
     }
 
     public void RetryPanel()
