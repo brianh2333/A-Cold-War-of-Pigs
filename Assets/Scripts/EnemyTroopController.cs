@@ -35,6 +35,11 @@ public class EnemyTroopController : MonoBehaviour
             target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    void OnEnable()
+    {
+        gameObject.tag = "Target";
+    }
+
     void Update()
     {
         if (GameManager.instance.CIAAlive > 0)
@@ -107,7 +112,7 @@ public class EnemyTroopController : MonoBehaviour
 
     IEnumerator Attack()
     {
-        while (state == State.Attack && !isDead && health.health > 0)
+        while (state == State.Attack && !isDead && health.health > 0 && target.GetComponent<HealthController>().health > 0)
         {
             anim.SetTrigger("Attack");
             if (transform.name.Contains("Gunner"))

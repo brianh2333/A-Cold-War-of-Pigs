@@ -32,10 +32,15 @@ public class TroopController : MonoBehaviour {
         body = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         isEnabled = true;
-        if (GameObject.FindGameObjectWithTag("Target") != null)
+        if (GameObject.FindGameObjectWithTag("Target") != null && health.health > 0) 
             target = GameObject.FindGameObjectWithTag("Target").transform;
     }
-    
+
+    private void OnEnable()
+    {
+        gameObject.tag = "Player";
+    }
+
     void Start() {
         if (isEnabled == true) {
             spawnSound.Play();
@@ -96,7 +101,7 @@ public class TroopController : MonoBehaviour {
     }
 
     IEnumerator Attack() {
-        while (state == State.Attack && !isDead && health.health > 0) {
+        while (state == State.Attack && !isDead && health.health > 0 && target.GetComponent<HealthController>().health > 0) {
 			anim.SetTrigger("Attack");
             if (transform.name.Contains("Gunner"))
             {

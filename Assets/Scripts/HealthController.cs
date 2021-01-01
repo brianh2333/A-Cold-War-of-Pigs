@@ -40,16 +40,21 @@ public class HealthController : MonoBehaviour
             canDie = false;
             if (gameObject.CompareTag("Player"))
                 GameManager.instance.CIAAlive--;
-            StartCoroutine(OnDeath());
+            if (!gameObject.CompareTag("Obstacle"))
+                StartCoroutine(OnDeath());
+            else 
+                gameObject.SetActive(false);
         }
         
     }
 
     IEnumerator OnDeath()
     {
+        gameObject.tag = "Untagged";
         anim.SetTrigger("Death");
         yield return new WaitForSeconds(1.4f);
-        transform.Translate(Vector3.down * Time.deltaTime * 70f);
+        if ( !(gameObject.CompareTag("Target") && gameObject.name.Contains("Gunner")) )
+            transform.Translate(Vector3.down * Time.deltaTime * 50f);
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
     }

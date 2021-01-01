@@ -53,9 +53,9 @@ public class GameManager : MonoBehaviour {
     {
         if (move == true)
         {
-            camera.transform.Translate(Vector2.right * Time.deltaTime * 20f);
-            playerTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 20f);
-            enemyTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 20f); ;
+            camera.transform.Translate(Vector2.right * Time.deltaTime * 30f);
+            playerTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 30f);
+            enemyTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 30f); ;
         }
     }
 

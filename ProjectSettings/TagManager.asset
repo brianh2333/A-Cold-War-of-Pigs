@@ -10,6 +10,7 @@ TagManager:
   - EnemySpawns
   - EnemyEmplacements
   - Emplacement
+  - Obstacle
   layers:
   - Default
   - TransparentFX

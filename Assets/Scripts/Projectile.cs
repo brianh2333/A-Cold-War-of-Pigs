@@ -40,10 +40,14 @@ public class Projectile : MonoBehaviour {
     }
 
     void HitObject(GameObject g) {
-        HealthController health = g.GetComponent<HealthController>();
-        if (health != null) {
-            health.TakeDamage(attackDamage);
-            PlayerTroopSpawner.instance.AddMerits(2);
+        if (g.CompareTag("Target") || g.CompareTag("Obstacle"))
+        {
+            HealthController health = g.GetComponent<HealthController>();
+            if (health != null)
+            {
+                health.TakeDamage(attackDamage);
+                PlayerTroopSpawner.instance.AddMerits(2);
+            }
         }
     }
 }
