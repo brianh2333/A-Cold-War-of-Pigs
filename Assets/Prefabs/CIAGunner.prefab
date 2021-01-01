@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a041079232ce24dae71f510f3e5ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 8702626593727353017, guid: c25f3e46887c2194eb001396ca513ba6, type: 3}
+  bullet: {fileID: 8702626593727353017, guid: e562538e12a580e45ae6ac477d80fe81, type: 3}
   gunShootSound: {fileID: 1342520973}
 --- !u!1 &501420443087243235
 GameObject:
@@ -893,7 +893,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 501420443717644520}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.013614403
   m_Height: 0.061301384
   m_Direction: 1
@@ -946,12 +946,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccf26e3c900d2745a3945b4c49ba6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
   chaseDist: 100
   attackDist: 5
   turnSpeed: 100
   target: {fileID: 0}
   fireProjectile: {fileID: 7553862693258894128}
+  health: {fileID: 0}
   spawnSound: {fileID: 2955085387458001879}
   state: 0
 --- !u!82 &2955085387458001879

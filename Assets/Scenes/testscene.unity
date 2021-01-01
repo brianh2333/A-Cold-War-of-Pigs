@@ -151,6 +151,12 @@ Transform:
   m_Father: {fileID: 957096427}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &106468432 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4994931952515558587, guid: 1993395538808474eb3c786bfdba4b72,
+    type: 3}
+  m_PrefabInstance: {fileID: 3125529666588954952}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &124564562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +1647,7 @@ PrefabInstance:
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1666,11 +1672,21 @@ PrefabInstance:
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.data[2].name
-      value: GunnerBullet
+      value: EnemyGunnerBullet
       objectReference: {fileID: 0}
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: pools.Array.data[2].size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[3].name
+      value: Rifleman
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[3].size
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
@@ -1689,7 +1705,13 @@ PrefabInstance:
         type: 3}
       propertyPath: pools.Array.data[2].prefab
       value: 
-      objectReference: {fileID: 8702626593727353014, guid: e562538e12a580e45ae6ac477d80fe81,
+      objectReference: {fileID: 8702626593727353014, guid: a548015d0436ca646950849304a371a3,
+        type: 3}
+    - target: {fileID: 7351885302138191666, guid: fbaf4c809d18dc645bd6bb70e8623147,
+        type: 3}
+      propertyPath: pools.Array.data[3].prefab
+      value: 
+      objectReference: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - target: {fileID: 9039304909267158709, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1777,11 +1799,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   waves:
-  - name: 1
+  - name: Hour 1
     enemies:
     - name: Gunner
-      amount: 3
+      amount: 1
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Rifleman
+      amount: 1
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+    amount: 2
+  - name: Hour 2
+    enemies:
+    - name: Rifleman
+      amount: 3
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+    amount: 3
+  - name: Hour 3
+    enemies:
+    - name: Rifleman
+      amount: 3
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     amount: 3
   spawnpoints:
@@ -1889,3 +1929,117 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &3125529666588954952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 690739622165723998, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690739622165723998, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666820102471, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: gunShootSound
+      value: 
+      objectReference: {fileID: 106468432}
+    - target: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_Name
+      value: CommieRifleman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529666961762447, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529667162667590, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529667162667590, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529667682752006, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125529667682752006, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.044
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1993395538808474eb3c786bfdba4b72, type: 3}

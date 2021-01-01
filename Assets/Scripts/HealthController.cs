@@ -36,9 +36,9 @@ public class HealthController : MonoBehaviour
         if( health <= 0 && canDie)
         {
             canDie = false;
-            StartCoroutine(OnDeath());
             if (gameObject.CompareTag("Player"))
                 GameManager.instance.CIAAlive--;
+            StartCoroutine(OnDeath());
         }
         
     }
@@ -48,6 +48,5 @@ public class HealthController : MonoBehaviour
         anim.SetTrigger("Death");
         yield return new WaitForSeconds(1.5f);
         gameObject.SetActive(false);
-        GameManager.instance.CIAAlive--;
     }
 }
