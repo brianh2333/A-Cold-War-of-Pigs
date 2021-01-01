@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     
@@ -19,8 +20,11 @@ public class GameManager : MonoBehaviour {
 
     bool troopsUIOpen = false;
 
+    public GameObject retryPanel;
+
 
     void Awake() {
+        retryPanel.SetActive(false);
         hour++;
         CIAAlive = 0;
         targetsRemaining = 0;
@@ -34,6 +38,26 @@ public class GameManager : MonoBehaviour {
         targetsRemaining = GameObject.FindGameObjectsWithTag("Target").Length;
         DisplayCounters();
         DisplayHour();
+
+        RetryPanel();
+    }
+
+    public void RetryPanel()
+    {
+        if (PlayerTroopSpawner.instance.merits < PlayerTroopSpawner.instance.riflemanCost && CIAAlive == 0 && targetsRemaining > 0 )
+        {
+            retryPanel.SetActive(true);
+        }
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void DisplayHour()

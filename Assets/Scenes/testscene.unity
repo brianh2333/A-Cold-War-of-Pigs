@@ -727,6 +727,12 @@ Transform:
   m_Father: {fileID: 1614565325}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1292121316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093424540426889444, guid: 0f7bc3e659444b94cbe3248af17a046a,
+    type: 3}
+  m_PrefabInstance: {fileID: 365217306113789071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350119011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1483,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6093424540426889444, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6169026262995004245, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_FontData.m_Alignment
@@ -1548,6 +1559,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1909623074}
     - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
+      propertyPath: retryPanel
+      value: 
+      objectReference: {fileID: 1292121316}
+    - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
       propertyPath: CIAAliveText
       value: 
       objectReference: {fileID: 1431895991}
@@ -1567,7 +1582,7 @@ PrefabInstance:
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: merits
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -1802,14 +1817,10 @@ MonoBehaviour:
   - name: Hour 1
     enemies:
     - name: Gunner
-      amount: 1
+      amount: 10
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Rifleman
-      amount: 1
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
-    amount: 2
+    amount: 1
   - name: Hour 2
     enemies:
     - name: Rifleman
