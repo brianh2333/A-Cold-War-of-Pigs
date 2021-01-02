@@ -70,7 +70,6 @@ public class TroopController : MonoBehaviour {
     }
 
     void IdleUpdate() {
-        //Debug.Log("Idle update");
         anim.SetBool("isWalking", false);
 		body.velocity = Vector3.zero;
 		float dist = Vector3.Distance(transform.position, target.position);

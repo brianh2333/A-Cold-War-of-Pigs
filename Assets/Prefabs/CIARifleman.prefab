@@ -183,9 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccf26e3c900d2745a3945b4c49ba6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  chaseDist: 125
-  attackDist: 7
+  speed: 25
+  chaseDist: 100
+  attackDist: 4
   turnSpeed: 100
   target: {fileID: 0}
   fireProjectile: {fileID: 6891852851174433770}
@@ -391,6 +391,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WarningMessage
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: b7135e0f76bf56740b8de036b257f15f,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7135e0f76bf56740b8de036b257f15f, type: 3}

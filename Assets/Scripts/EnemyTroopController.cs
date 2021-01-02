@@ -117,7 +117,6 @@ public class EnemyTroopController : MonoBehaviour
             anim.SetTrigger("Attack");
             if (transform.name.Contains("Gunner"))
             {
-                Debug.Log("Shoot");
                 fireProjectile.Shoot();
                 yield return new WaitForSeconds(.5f);
                 fireProjectile.Shoot();

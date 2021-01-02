@@ -814,7 +814,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 8c765b952595f2645a025613c18d5439, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -879,9 +879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9d22f02600672498915c9abe356dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  chaseDist: 20
-  attackDist: 7
+  speed: 25
+  chaseDist: 8
+  attackDist: 5
   turnSpeed: 100
   target: {fileID: 0}
   fireProjectile: {fileID: 3125529666820102471}
