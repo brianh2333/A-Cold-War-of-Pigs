@@ -161,6 +161,7 @@ public class GameManager : MonoBehaviour {
     {
         historyText.SetActive(true);
         historyText.GetComponent<Animator>().SetTrigger("FadeIn");
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(30f);
+        SceneManager.LoadScene(0);
     }
 }
