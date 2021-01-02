@@ -111,6 +111,11 @@ public class TroopController : MonoBehaviour {
                 fireProjectile.Shoot();
                 yield return new WaitForSeconds(2f);
             }
+            else if (transform.name.Contains("Sniper"))
+            {
+                fireProjectile.Shoot();
+                yield return new WaitForSeconds(6f);
+            }
             else if (transform.name.Contains("Rifleman"))
             {
                 fireProjectile.Shoot();

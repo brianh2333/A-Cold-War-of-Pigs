@@ -15,8 +15,10 @@ public class PlayerTroopSpawner : MonoBehaviour
     //Modify costs in inspector
     public int riflemanCost = 10;
     public int gunnerCost = 30;
+    public int sniperCost = 75;
     public Text callRiflemanText;
     public Text callGunnerText;
+    public Text callSniperText;
     //public Text callTroop2Text;
     //public Text callTroop3Text;
     //public Text callTroop4Text;
@@ -30,6 +32,7 @@ public class PlayerTroopSpawner : MonoBehaviour
 
         callRiflemanText.text = "Call Rifleman \n" + "Cost: " + riflemanCost + " merits";
         callGunnerText.text = "Call Gunner \n" + "Cost: " + gunnerCost + " merits";
+        callSniperText.text = "Call Sniper \n" + "Cost: " + sniperCost + " merits";
     }
 
     void Update()
@@ -59,6 +62,19 @@ public class PlayerTroopSpawner : MonoBehaviour
         {
             merits -= gunnerCost;
             GameObject obj = PlayerPooler.instance.SpawnFromPool("Gunner", spawnpoints[Random.Range(0, spawnpoints.Length)].transform.position, Quaternion.identity);
+            obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y + 120, obj.transform.eulerAngles.z);
+            GameManager.instance.CIAAlive++;
+        }
+        else
+            Debug.Log("Insufficient merits!");
+    }
+
+    public void SpawnSniper()
+    {
+        if (merits >= sniperCost)
+        {
+            merits -= sniperCost;
+            GameObject obj = PlayerPooler.instance.SpawnFromPool("Sniper", spawnpoints[Random.Range(0, spawnpoints.Length)].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y + 120, obj.transform.eulerAngles.z);
             GameManager.instance.CIAAlive++;
         }
