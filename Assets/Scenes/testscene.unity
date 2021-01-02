@@ -4586,6 +4586,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1431895991}
     - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
+      propertyPath: dayNightLight
+      value: 
+      objectReference: {fileID: 1938125422}
+    - target: {fileID: 263834174, guid: fbaf4c809d18dc645bd6bb70e8623147, type: 3}
       propertyPath: enemyTroopSpawns
       value: 
       objectReference: {fileID: 957096426}

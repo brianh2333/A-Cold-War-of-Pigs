@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour {
     public GameObject[] waypoints;
     public Transform mover;
     public Camera camera;
+    public GameObject dayNightLight;
 
     private int waypointIndex;
 
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour {
         Time.timeScale = 1f;
     }
 
-    private void Update()
+    void Update()
     {
         if (hour == 20)
             StartCoroutine(FinalCutscene());
@@ -64,6 +65,13 @@ public class GameManager : MonoBehaviour {
             ResumeGame();
         }
 
+        if (hour == 2 % 3) {
+
+            dayNightLight.transform.eulerAngles = new Vector3(15f, -160f,  -150f);
+        }
+        else {
+            dayNightLight.transform.eulerAngles = new Vector3(50f, -30f, 0);
+        }
     }
 
 
