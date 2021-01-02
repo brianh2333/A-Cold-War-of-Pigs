@@ -871,7 +871,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 912e5fc17c657ea4c8c20d6b9ec46d58, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6b9d46b930feb704b999aea1c1aeaaeb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -3830,16 +3830,13 @@ MonoBehaviour:
     - Character Artist
 
 
-    Soundbible - Sounds
-
-
-    ActionCinema - Background
-    Music
+    NickM - Sounds/Background Music
 
 
 
-    Thank you to the ''Historically Accurate Game Jam'' hosts for this
-    event!'
+
+    Thank you to
+    the ''Historically Accurate Game Jam'' hosts for this event!'
 --- !u!222 &2067401722
 CanvasRenderer:
   m_ObjectHideFlags: 0
