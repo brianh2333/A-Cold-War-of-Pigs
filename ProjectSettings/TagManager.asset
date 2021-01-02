@@ -11,6 +11,7 @@ TagManager:
   - EnemyEmplacements
   - Emplacement
   - Obstacle
+  - Waypoints
   layers:
   - Default
   - TransparentFX

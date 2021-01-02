@@ -102,7 +102,7 @@ public class EnemyTroopSpawner : MonoBehaviour
                 GameManager.instance.hour++;
             }
             GameManager.instance.wave++;
-            GameManager.instance.MoveCamera(true);
+            StartCoroutine(GameManager.instance.MoveCamera(true, 4f));
             spawn = true;
         }
     }
@@ -117,14 +117,14 @@ public class EnemyTroopSpawner : MonoBehaviour
         {
             GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[waveIndex].enemies[enemyIndex].name, emplacements[empIndex].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y - 90, obj.transform.eulerAngles.z);
-            empIndex = (empIndex + 1) % 3;
+            empIndex = (empIndex + 1) % emplacements.Length;
             yield return null;
         }
         else
         {
             GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[waveIndex].enemies[enemyIndex].name, spawnpoints[laneIndex].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y - 90, obj.transform.eulerAngles.z);
-            laneIndex = (laneIndex + 1) % 6;
+            laneIndex = (laneIndex + 1) % spawnpoints.Length;
             yield return new WaitForSeconds(3f);
         }
         GameManager.instance.targetsRemaining++;

@@ -26,10 +26,15 @@ public class GameManager : MonoBehaviour {
     public GameObject playerTroopSpawns;
     public GameObject enemyTroopSpawns;
     public GameObject pauseMenu;
+    public GameObject[] waypoints;
+    public Transform mover;
     public Camera camera;
+
+    private int waypointIndex;
 
 
     void Awake() {
+        waypointIndex = 0;
         hour = 1;
         retryPanel.SetActive(false);
         pauseMenu.SetActive(false);
@@ -38,9 +43,12 @@ public class GameManager : MonoBehaviour {
         targetsRemaining = 0;
         if (instance == null) instance = this;
 
-        camera.transform.position = new Vector3(-2.8f, 1.9f, -6.3f);
+
+        mover.transform.position = waypoints[0].transform.position;
+
+        /*camera.transform.position = new Vector3(-2.8f, 1.9f, -6.3f);
         playerTroopSpawns.transform.position = new Vector3(-5.27f, 0.2763095f, .03f);
-        enemyTroopSpawns.transform.position = new Vector3(3.93f, 0.2763095f, .03f);
+        enemyTroopSpawns.transform.position = new Vector3(3.93f, 0.2763095f, .03f);*/
         Time.timeScale = 1f;
     }
 
@@ -58,15 +66,26 @@ public class GameManager : MonoBehaviour {
 
     }
 
-    public void MoveCamera(bool move)
+
+    public IEnumerator MoveCamera(bool move, float duration)
     {
-        if (move == true)
+        if (move == true && waypoints[waypointIndex] != null)
         {
-            camera.transform.Translate(Vector2.right * Time.deltaTime * 30f);
-            playerTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 30f);
-            enemyTroopSpawns.transform.Translate(Vector2.right * Time.deltaTime * 30f); ;
+            float time = 0;
+            waypointIndex++;
+            while (time < duration)
+            {
+                mover.transform.position = Vector3.Lerp(waypoints[waypointIndex - 1].transform.position, waypoints[waypointIndex].transform.position, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+            mover.transform.position = waypoints[waypointIndex].transform.position;
         }
+        else
+            yield return null;
     }
+
+    
 
     public void RetryPanel()
     {

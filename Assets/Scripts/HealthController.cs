@@ -14,13 +14,11 @@ public class HealthController : MonoBehaviour
 
     public Animator anim;
     private bool canDie;
-    private Rigidbody rb;
 
     void Awake()
     {
         health = maxHealth;
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
     }
     void OnEnable()
     {
@@ -59,7 +57,7 @@ public class HealthController : MonoBehaviour
         }
         else
         {
-            if ( !(tag.Contains("Gunner")) )
+            if ( !(transform.name.Contains("Gunner")) )
             {
                 yield return new WaitForSeconds(.5f);
                 transform.Translate(Vector3.down * Time.deltaTime * 50f);
