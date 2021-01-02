@@ -59,9 +59,9 @@ public class HealthController : MonoBehaviour
         }
         else
         {
-            if ( !(tag == "Gunner") )
+            if ( !(tag.Contains("Gunner")) )
             {
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(.5f);
                 transform.Translate(Vector3.down * Time.deltaTime * 50f);
             }
         }

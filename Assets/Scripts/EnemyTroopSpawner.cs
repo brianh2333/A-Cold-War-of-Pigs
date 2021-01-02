@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyTroopSpawner : MonoBehaviour
 {
+    public static EnemyTroopSpawner instance;
     public enum SpawnState
     {
         START,
@@ -30,7 +31,7 @@ public class EnemyTroopSpawner : MonoBehaviour
 
     public Wave[] waves;
 
-    private int hourIndex = 0;
+    public int waveIndex = 0;
     private int enemyIndex = 0;
 
     public GameObject[] spawnpoints;
@@ -45,9 +46,13 @@ public class EnemyTroopSpawner : MonoBehaviour
 
     void Awake()
     {
+        if (instance != null)
+        {
+            instance = this;
+        }
         spawnpoints = GameObject.FindGameObjectsWithTag("EnemySpawns");
         emplacements = GameObject.FindGameObjectsWithTag("EnemyEmplacements");
-        hourIndex = 0;
+        waveIndex = 0;
         totalAmount = 0;
         empIndex = 0;
         laneIndex = 0;
@@ -58,18 +63,18 @@ public class EnemyTroopSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((hourIndex != GameManager.instance.hour-1 || (state == SpawnState.START || state == SpawnState.SPAWNING)) || spawn)
+        if ((waveIndex != GameManager.instance.wave-1 || (state == SpawnState.START || state == SpawnState.SPAWNING)) || spawn)
         {
 
             if (spawn)
             {
-                for (int i = 0; i < waves[hourIndex].enemies.Length; i++)
+                for (int i = 0; i < waves[waveIndex].enemies.Length; i++)
                 {
-                    totalAmount += waves[hourIndex].enemies[i].amount;
+                    totalAmount += waves[waveIndex].enemies[i].amount;
                 }
                 spawn = false;
             }
-            for (int i = 0; i < waves[hourIndex].amount; i++)
+            for (int i = 0; i < waves[waveIndex].amount; i++)
             {
                 state = SpawnState.SPAWNING;
                 StartCoroutine(Spawn());
@@ -90,8 +95,13 @@ public class EnemyTroopSpawner : MonoBehaviour
             totalAmount = 0;
             enemyIndex = 0;
             spawnIndex = 0;
-            hourIndex++;
-            GameManager.instance.hour++;
+            waveIndex++;
+            if (((waveIndex+1) % 3) == 0)
+            {
+                Debug.Log("hour");
+                GameManager.instance.hour++;
+            }
+            GameManager.instance.wave++;
             GameManager.instance.MoveCamera(true);
             spawn = true;
         }
@@ -99,20 +109,20 @@ public class EnemyTroopSpawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        if ( spawnIndex == waves[hourIndex].enemies[enemyIndex].amount)
+        if ( spawnIndex == waves[waveIndex].enemies[enemyIndex].amount)
         {
             enemyIndex++;
         }
-        if (waves[hourIndex].enemies[enemyIndex].enemy.name.Contains("Gunner"))
+        if (waves[waveIndex].enemies[enemyIndex].enemy.name.Contains("Gunner"))
         {
-            GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[hourIndex].enemies[enemyIndex].name, emplacements[empIndex].transform.position, Quaternion.identity);
+            GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[waveIndex].enemies[enemyIndex].name, emplacements[empIndex].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y - 90, obj.transform.eulerAngles.z);
             empIndex = (empIndex + 1) % 3;
             yield return null;
         }
         else
         {
-            GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[hourIndex].enemies[enemyIndex].name, spawnpoints[laneIndex].transform.position, Quaternion.identity);
+            GameObject obj = EnemyPooler.instance.SpawnFromPool(waves[waveIndex].enemies[enemyIndex].name, spawnpoints[laneIndex].transform.position, Quaternion.identity);
             obj.transform.rotation = Quaternion.Euler(obj.transform.eulerAngles.x, obj.transform.eulerAngles.y - 90, obj.transform.eulerAngles.z);
             laneIndex = (laneIndex + 1) % 6;
             yield return new WaitForSeconds(3f);

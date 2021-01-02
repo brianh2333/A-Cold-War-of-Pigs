@@ -43,8 +43,11 @@ public class ProjectileToPlayer : MonoBehaviour {
     }
     
     void OnTriggerEnter(Collider c) {
-        HitObject(c.gameObject);
-        this.gameObject.SetActive(false);
+        if (c.CompareTag("Player"))
+        {
+            HitObject(c.gameObject);
+            this.gameObject.SetActive(false);
+        }
     }
 
     void HitObject(GameObject g) {

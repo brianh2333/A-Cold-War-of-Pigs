@@ -13,10 +13,12 @@ public class GameManager : MonoBehaviour {
     public Text CIAAliveText;
     public Text targetsRemainingText;
     public Text hourText;
+    public Text waveText;
 
     public int CIAAlive = 0;
     public int targetsRemaining = 0;
     public int hour;
+    public int wave;
 
     bool troopsUIOpen = false;
 
@@ -28,9 +30,10 @@ public class GameManager : MonoBehaviour {
 
 
     void Awake() {
+        hour = 1;
         retryPanel.SetActive(false);
         pauseMenu.SetActive(false);
-        hour++;
+        wave++;
         CIAAlive = 0;
         targetsRemaining = 0;
         if (instance == null) instance = this;
@@ -52,6 +55,7 @@ public class GameManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             ResumeGame();
         }
+
     }
 
     public void MoveCamera(bool move)
@@ -85,6 +89,7 @@ public class GameManager : MonoBehaviour {
     public void DisplayHour()
     {
         hourText.text = "Hour " + hour;
+        waveText.text = "Wave " + wave + " of the invasion.";
     }
 
     public void DisplayCounters()

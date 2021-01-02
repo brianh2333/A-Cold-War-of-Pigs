@@ -33,10 +33,13 @@ public class Projectile : MonoBehaviour {
         else
             seconds -= Time.deltaTime;
     }
-    
+
     void OnTriggerEnter(Collider c) {
-        HitObject(c.gameObject);
-        this.gameObject.SetActive(false);
+        if (c.CompareTag("Target") || c.CompareTag("Obstacle"))
+        {
+            HitObject(c.gameObject);
+            this.gameObject.SetActive(false);
+        }
     }
 
     void HitObject(GameObject g) {
