@@ -3,7 +3,12 @@ guid: ba1ed1f86610a8841b09faea4e7e7157
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: beige-woven-fabric-close-up-texture
+    second: {fileID: 2800000, guid: 5e3d1f9c9ce1b0149bbaac5333d1645e, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
