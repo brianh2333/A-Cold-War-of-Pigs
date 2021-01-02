@@ -23,11 +23,13 @@ public class GameManager : MonoBehaviour {
     public GameObject retryPanel;
     public GameObject playerTroopSpawns;
     public GameObject enemyTroopSpawns;
+    public GameObject pauseMenu;
     public Camera camera;
 
 
     void Awake() {
         retryPanel.SetActive(false);
+        pauseMenu.SetActive(false);
         hour++;
         CIAAlive = 0;
         targetsRemaining = 0;
@@ -36,8 +38,7 @@ public class GameManager : MonoBehaviour {
         camera.transform.position = new Vector3(-2.8f, 1.9f, -6.3f);
         playerTroopSpawns.transform.position = new Vector3(-5.27f, 0.2763095f, .03f);
         enemyTroopSpawns.transform.position = new Vector3(3.93f, 0.2763095f, .03f);
-
-
+        Time.timeScale = 1f;
     }
 
     private void Update()
@@ -47,6 +48,10 @@ public class GameManager : MonoBehaviour {
         DisplayHour();
 
         RetryPanel();
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            ResumeGame();
+        }
     }
 
     public void MoveCamera(bool move)
@@ -111,5 +116,20 @@ public class GameManager : MonoBehaviour {
     public void TroopsUIClosed() {
         troopsUIOpen = true;
         TroopsUIExit();
+    }
+
+    public void ResumeGame() {
+        if (Time.timeScale == 1f) {
+            Time.timeScale = 0f;
+            pauseMenu.SetActive(true);
+        }
+        else {
+            Time.timeScale = 1f;
+            pauseMenu.SetActive(false);
+        }
+    }
+
+    public void QuitGame() {
+        SceneManager.LoadScene(0);
     }
 }
