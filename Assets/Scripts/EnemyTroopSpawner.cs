@@ -92,6 +92,10 @@ public class EnemyTroopSpawner : MonoBehaviour
         }
         else if (state == SpawnState.FINISHED)
         {
+            if(waveIndex == 60)
+            {
+                StartCoroutine(GameManager.instance.FinalCutscene());
+            }
             totalAmount = 0;
             enemyIndex = 0;
             spawnIndex = 0;

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour {
     public Text hourText;
     public Text waveText;
 
+
     public int CIAAlive = 0;
     public int targetsRemaining = 0;
     public int hour;
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour {
     public GameObject playerTroopSpawns;
     public GameObject enemyTroopSpawns;
     public GameObject pauseMenu;
+    public GameObject historyText;
     public GameObject[] waypoints;
     public Transform mover;
     public Camera camera;
@@ -45,15 +47,13 @@ public class GameManager : MonoBehaviour {
 
 
         mover.transform.position = waypoints[0].transform.position;
-
-        /*camera.transform.position = new Vector3(-2.8f, 1.9f, -6.3f);
-        playerTroopSpawns.transform.position = new Vector3(-5.27f, 0.2763095f, .03f);
-        enemyTroopSpawns.transform.position = new Vector3(3.93f, 0.2763095f, .03f);*/
         Time.timeScale = 1f;
     }
 
     private void Update()
     {
+        if (hour == 20)
+            StartCoroutine(FinalCutscene());
         targetsRemaining = GameObject.FindGameObjectsWithTag("Target").Length;
         DisplayCounters();
         DisplayHour();
@@ -155,5 +155,12 @@ public class GameManager : MonoBehaviour {
 
     public void QuitGame() {
         SceneManager.LoadScene(0);
+    }
+
+    public IEnumerator FinalCutscene()
+    {
+        historyText.SetActive(true);
+        historyText.GetComponent<Animator>().SetTrigger("FadeIn");
+        yield return new WaitForSeconds(20f);
     }
 }
