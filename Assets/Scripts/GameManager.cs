@@ -66,11 +66,10 @@ public class GameManager : MonoBehaviour {
         }
 
         if (hour == 2 % 3) {
-
-            dayNightLight.transform.eulerAngles = new Vector3(15f, -160f,  -150f);
+            dayNightLight.transform.eulerAngles = new Vector3(50f, -30f, 0);
         }
         else {
-            dayNightLight.transform.eulerAngles = new Vector3(50f, -30f, 0);
+            dayNightLight.transform.eulerAngles = new Vector3(15f, -160f,  -150f);
         }
     }
 
