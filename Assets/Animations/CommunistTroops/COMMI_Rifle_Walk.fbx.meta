@@ -6,7 +6,22 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boots
+    second: {fileID: 2100000, guid: 02c17b94d1ba1d846a95d6456468a249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CubanGreen
+    second: {fileID: 2100000, guid: 5ebf78882d8f6ab4e9f4805d28dd28ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkinColor
+    second: {fileID: 2100000, guid: da3a7ebc36754e44ab76d063155b17f7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
