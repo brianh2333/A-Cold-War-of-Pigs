@@ -53,8 +53,11 @@ public class GameManager : MonoBehaviour {
 
     void Update()
     {
-        if (hour == 10)
+        if (hour >= 10 && (PlayerTroopSpawner.instance.merits < PlayerTroopSpawner.instance.riflemanCost && CIAAlive == 0 && targetsRemaining > 0))
             StartCoroutine(FinalCutscene());
+        else if (hour < 10)
+            RetryPanel();
+
         targetsRemaining = GameObject.FindGameObjectsWithTag("Target").Length;
         DisplayCounters();
         DisplayHour();
@@ -66,10 +69,11 @@ public class GameManager : MonoBehaviour {
         }
 
         if (hour >= 1 && hour <=7) {
-            dayNightLight.transform.eulerAngles = new Vector3(50f, -30f, 0);
+
+            dayNightLight.transform.eulerAngles = new Vector3(15f, -160f, -150f);
         }
         else {
-            dayNightLight.transform.eulerAngles = new Vector3(15f, -160f,  -150f);
+            dayNightLight.transform.eulerAngles = new Vector3(50f, -30f, 0);
         }
     }
 
@@ -96,7 +100,7 @@ public class GameManager : MonoBehaviour {
 
     public void RetryPanel()
     {
-        if (PlayerTroopSpawner.instance.merits < PlayerTroopSpawner.instance.riflemanCost && CIAAlive == 0 && targetsRemaining > 0 )
+        if (( PlayerTroopSpawner.instance.merits < PlayerTroopSpawner.instance.riflemanCost && CIAAlive == 0 && targetsRemaining > 0)  && hour < 10)
         {
             retryPanel.SetActive(true);
         }

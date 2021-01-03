@@ -116,7 +116,8 @@ public class EnemyTroopController : MonoBehaviour
     {
         while (state == State.Attack && !isDead && health.health > 0 && target.GetComponent<HealthController>().health > 0)
         {
-            anim.SetTrigger("Attack");
+            if(health.health > 0)
+                anim.SetTrigger("Attack");
             if (transform.name.Contains("Gunner"))
             {
                 fireProjectile.Shoot();

@@ -63,7 +63,8 @@ public class HealthController : MonoBehaviour
                 transform.Translate(Vector3.down * Time.deltaTime * 50f);
             }
             else
-                yield return new WaitForSeconds(2f);
+                gameObject.SetActive(false);
+            //yield return new WaitForSeconds(2f);
         }
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
