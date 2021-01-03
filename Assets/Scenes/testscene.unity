@@ -4165,10 +4165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 191198395, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 362347655, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4177,79 +4173,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 263834174}
-    - target: {fileID: 756256297, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 756256297, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 756256297, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 756256297, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 756256298, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 68acafccf3c9db24aa326c473391660c,
-        type: 3}
-    - target: {fileID: 1099610877, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099610877, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099610877, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 280
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099610877, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099610877, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 230
-      objectReference: {fileID: 0}
-    - target: {fileID: 1099610877, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -125
-      objectReference: {fileID: 0}
     - target: {fileID: 1099610878, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 263834174}
-    - target: {fileID: 1930910545, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1930910545, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1930910545, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 280
-      objectReference: {fileID: 0}
-    - target: {fileID: 1930910545, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 1930910545, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 230
-      objectReference: {fileID: 0}
-    - target: {fileID: 1930910545, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -255
-      objectReference: {fileID: 0}
     - target: {fileID: 1930910546, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4262,71 +4189,11 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 263834174}
-    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 365217304929082868, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080327118}
-    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 365217305022123011, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_Name
@@ -4442,96 +4309,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080327118}
-    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 365217305924897992, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080327118}
-    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486634253369177244, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.3584906
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486634253369177244, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.009721109
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486634253369177244, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7513273756923594865, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -360
-      objectReference: {fileID: 0}
-    - target: {fileID: 7513273756923594865, guid: 0f7bc3e659444b94cbe3248af17a046a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
 --- !u!114 &365217306113789072 stripped
@@ -5735,15 +5517,7 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 4
   - name: Wave 16
     enemies:
     - name: Rifleman
@@ -5797,7 +5571,19 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    amount: 6
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    amount: 9
   - name: Wave 18
     enemies:
     - name: Rifleman
@@ -6298,19 +6084,7 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 3
   - name: Wave 37
     enemies:
     - name: Rifleman
@@ -6321,23 +6095,7 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 2
   - name: Wave 38
     enemies:
     - name: Rifleman
@@ -6447,6 +6205,76 @@ MonoBehaviour:
         type: 3}
     amount: 6
   - name: Wave 42
+    enemies:
+    - name: Rifleman
+      amount: 6
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    amount: 10
+  - name: Wave 43
+    enemies:
+    - name: Rifleman
+      amount: 6
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    - name: Gunner
+      amount: 0
+      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    amount: 6
+  - name: Wave 44
     enemies:
     - name: Rifleman
       amount: 6
@@ -6878,7 +6706,7 @@ MonoBehaviour:
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
     amount: 6
-  - name: Wave 5
+  - name: Wave 60
     enemies:
     - name: Rifleman
       amount: 6
@@ -6904,39 +6732,9 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    amount: 6
-  - name: Wave 5
-    enemies:
-    - name: Rifleman
-      amount: 6
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
     - name: Gunner
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
-  - name: Wave 5
-    enemies:
-    - name: Rifleman
-      amount: 6
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
       amount: 0
@@ -6958,7 +6756,7 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    amount: 6
+    amount: 12
   waveIndex: 0
   spawnpoints:
   - {fileID: 0}
