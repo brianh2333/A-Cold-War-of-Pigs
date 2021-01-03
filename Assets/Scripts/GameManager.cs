@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour {
 
     void Update()
     {
-        if (hour == 20)
+        if (hour == 10)
             StartCoroutine(FinalCutscene());
         targetsRemaining = GameObject.FindGameObjectsWithTag("Target").Length;
         DisplayCounters();

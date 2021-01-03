@@ -38,6 +38,8 @@ public class EnemyTroopController : MonoBehaviour
     void OnEnable()
     {
         gameObject.tag = "Target";
+        isDead = false;
+        state = State.Idle;
     }
 
     void Update()

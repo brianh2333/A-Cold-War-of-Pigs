@@ -39,6 +39,9 @@ public class TroopController : MonoBehaviour {
     private void OnEnable()
     {
         gameObject.tag = "Player";
+        isDead = false;
+        isEnabled = true;
+        state = State.Idle;
     }
 
     void Start() {

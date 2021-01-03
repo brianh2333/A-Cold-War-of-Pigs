@@ -22,16 +22,18 @@ public class Projectile : MonoBehaviour {
     }
 
     void Update() {
-        Vector3 dir = target.transform.position - transform.position;
-        dir = dir.normalized;
-        body.velocity = dir * speed;
-        transform.forward = dir;
+        if(target != null){
+            Vector3 dir = target.transform.position - transform.position;
+            dir = dir.normalized;
+            body.velocity = dir * speed;
+            transform.forward = dir;
 
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        if (seconds <= 0)
-            this.gameObject.SetActive(false);
-        else
-            seconds -= Time.deltaTime;
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            if (seconds <= 0)
+                this.gameObject.SetActive(false);
+            else
+                seconds -= Time.deltaTime;
+        }
     }
 
     void OnTriggerEnter(Collider c) {

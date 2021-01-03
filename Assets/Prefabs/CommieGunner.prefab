@@ -45,73 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 8702626593727353017, guid: a548015d0436ca646950849304a371a3, type: 3}
   gunShootSound: {fileID: 135370611}
---- !u!54 &1531169141
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3609978035200866447}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 94
-  m_CollisionDetection: 0
---- !u!136 &1531169146
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3609978035200866447}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.014650709
-  m_Height: 0.04077061
-  m_Direction: 1
-  m_Center: {x: 3.298918e-17, y: 0.02019096, z: 0.011735267}
---- !u!114 &1531169143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3609978035200866447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b3280d84f8ef749b1337541dffd378, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 150
-  health: 0
-  isPlayer: 0
-  isEnemy: 1
-  anim: {fileID: 0}
---- !u!114 &1531169145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3609978035200866447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9d22f02600672498915c9abe356dd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  chaseDist: 8
-  attackDist: 7
-  turnSpeed: 100
-  target: {fileID: 0}
-  fireProjectile: {fileID: 270750712}
-  health: {fileID: 0}
-  state: 0
 --- !u!82 &135370611
 AudioSource:
   m_ObjectHideFlags: 0
@@ -208,6 +141,73 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1531169141
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609978035200866447}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
+--- !u!136 &1531169146
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609978035200866447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.014650709
+  m_Height: 0.04077061
+  m_Direction: 1
+  m_Center: {x: 3.298918e-17, y: 0.02019096, z: 0.011735267}
+--- !u!114 &1531169143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609978035200866447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b3280d84f8ef749b1337541dffd378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 150
+  health: 0
+  isPlayer: 0
+  isEnemy: 1
+  anim: {fileID: 0}
+--- !u!114 &1531169145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3609978035200866447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9d22f02600672498915c9abe356dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  chaseDist: 11
+  attackDist: 10
+  turnSpeed: 100
+  target: {fileID: 0}
+  fireProjectile: {fileID: 270750712}
+  health: {fileID: 0}
+  state: 0
 --- !u!1001 &4528473004102971161
 PrefabInstance:
   m_ObjectHideFlags: 0
