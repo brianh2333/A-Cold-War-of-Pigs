@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour {
             ResumeGame();
         }
 
-        if (hour == 2 % 3) {
+        if (hour >= 1 && hour <=7) {
             dayNightLight.transform.eulerAngles = new Vector3(50f, -30f, 0);
         }
         else {
