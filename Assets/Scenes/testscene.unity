@@ -4189,11 +4189,71 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 263834174}
+    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304723745899, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 365217304929082868, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080327118}
+    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217304929082869, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 365217305022123011, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_Name
@@ -4309,11 +4369,71 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080327118}
+    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305745379486, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 365217305924897992, guid: 0f7bc3e659444b94cbe3248af17a046a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080327118}
+    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 365217305924897993, guid: 0f7bc3e659444b94cbe3248af17a046a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7bc3e659444b94cbe3248af17a046a, type: 3}
 --- !u!114 &365217306113789072 stripped
@@ -4892,7 +5012,7 @@ PrefabInstance:
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
       propertyPath: merits
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3692619330900298044, guid: fbaf4c809d18dc645bd6bb70e8623147,
         type: 3}
@@ -5164,14 +5284,10 @@ MonoBehaviour:
   - name: Wave 1
     enemies:
     - name: Rifleman
-      amount: 2
+      amount: 5
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Rifleman
-      amount: 2
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
-    amount: 2
+    amount: 5
   - name: Wave 2
     enemies:
     - name: Rifleman
@@ -5179,299 +5295,107 @@ MonoBehaviour:
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Rifleman
-      amount: 3
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
-    - name: Rifleman
-      amount: 3
+      amount: 0
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     amount: 3
   - name: Wave 3
     enemies:
     - name: Rifleman
-      amount: 3
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
-    - name: Gunner
-      amount: 1
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 1
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 1
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 4
-  - name: Wave 4
-    enemies:
-    - name: Rifleman
-      amount: 3
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
-    - name: Gunner
-      amount: 2
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 2
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 2
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 2
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 5
-  - name: Wave 5
-    enemies:
-    - name: Rifleman
       amount: 6
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 1
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+        type: 3}
+    amount: 7
+  - name: Wave 4
+    enemies:
+    - name: Rifleman
+      amount: 5
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 2
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
+    amount: 7
+  - name: Wave 5
+    enemies:
+    - name: Rifleman
+      amount: 3
+      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 3
   - name: Wave 6
     enemies:
     - name: Rifleman
       amount: 6
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
     amount: 6
   - name: Wave 7
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 10
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 2
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 12
   - name: Wave 8
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 8
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 8
   - name: Wave 9
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 7
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 7
   - name: Wave 10
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 20
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 3
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 23
   - name: Wave 11
     enemies:
     - name: Rifleman
       amount: 6
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
     amount: 6
   - name: Wave 12
     enemies:
-    - name: Rifleman
-      amount: 6
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
     - name: Gunner
-      amount: 0
+      amount: 3
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 3
   - name: Wave 13
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 10
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 2
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 12
   - name: Wave 14
     enemies:
     - name: Rifleman
@@ -5479,72 +5403,28 @@ MonoBehaviour:
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 5
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 11
   - name: Wave 15
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 1
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 1
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 4
+    amount: 2
   - name: Wave 16
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 4
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 4
   - name: Wave 17
     enemies:
     - name: Rifleman
@@ -5552,119 +5432,35 @@ MonoBehaviour:
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
+      amount: 3
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
     amount: 9
   - name: Wave 18
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 2
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 2
   - name: Wave 19
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 1
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 1
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 2
   - name: Wave 20
     enemies:
-    - name: Rifleman
-      amount: 6
-      enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
-        type: 3}
     - name: Gunner
-      amount: 0
+      amount: 5
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 5
   - name: Wave 21
     enemies:
     - name: Rifleman
@@ -5675,155 +5471,59 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
     amount: 6
   - name: Wave 22
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 0
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
+      amount: 6
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
     amount: 6
   - name: Wave 23
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 3
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 3
   - name: Wave 24
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 3
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 3
   - name: Wave 25
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 1
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
+      amount: 5
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
     amount: 6
   - name: Wave 26
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 2
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
+      amount: 4
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
     amount: 6
@@ -5837,22 +5537,6 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
     amount: 6
   - name: Wave 28
     enemies:
@@ -5861,26 +5545,10 @@ MonoBehaviour:
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 5
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 11
   - name: Wave 29
     enemies:
     - name: Rifleman
@@ -5888,107 +5556,43 @@ MonoBehaviour:
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 4
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 10
   - name: Wave 30
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 11
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 11
   - name: Wave 31
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 2
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 2
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 4
   - name: Wave 32
     enemies:
     - name: Rifleman
-      amount: 6
+      amount: 4
       enemy: {fileID: 3125529666961762441, guid: 1993395538808474eb3c786bfdba4b72,
         type: 3}
     - name: Gunner
-      amount: 0
+      amount: 3
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    - name: Gunner
-      amount: 0
-      enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
-        type: 3}
-    amount: 6
+    amount: 7
   - name: Wave 33
     enemies:
     - name: Rifleman
@@ -6651,7 +6255,7 @@ MonoBehaviour:
       amount: 0
       enemy: {fileID: 3609978035200866447, guid: f56f4963ee9dc2e4c9916f55f1cf67d2,
         type: 3}
-    amount: 6
+    amount: 2
   - name: Wave 58
     enemies:
     - name: Rifleman

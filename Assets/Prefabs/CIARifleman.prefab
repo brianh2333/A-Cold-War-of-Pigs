@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccf26e3c900d2745a3945b4c49ba6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
   chaseDist: 100
   attackDist: 5
   turnSpeed: 100
